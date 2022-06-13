@@ -14,7 +14,8 @@ class aboutDialog : public QDialog
 public:
     explicit aboutDialog(QWidget *parent = nullptr);
     ~aboutDialog();
-
+    
+    void paintEvent(QPaintEvent *event);
 private:
     Ui::aboutDialog *ui;
 };
